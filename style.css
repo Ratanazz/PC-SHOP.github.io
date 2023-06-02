@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+}
+
+/* NAVBAR */
+nav{
+    
+    background-color: white;
+    width: 80%;
+    padding-top: 1rem;
+    margin: auto;
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: space-between;
+    border-radius: 3rem;
+    padding: 0.5rem 3rem;
+    align-items: center;
+    position: absolute;
+    left: 10%;
+    font-family: 'Roboto', sans-serif;
+}
+.logo {
+    text-align: center;
+    align-content: space-between;
+    margin-top: 0.4%;
+    
+}
+.logo a{
+    text-decoration: none;
+    color: #25373D;
+}
+.logo a:hover{
+    color: #3D8EB9;
+
+}
+.logo h1{
+    font-size: 1.5rem;
+    margin-top: 1%;
+    
+    
+}
+.nav_link li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 3rem;
+    font-weight: bold;
+    font-size: 1rem;
+    
+    
+}
+.nav_link a{
+    text-decoration: none;
+    color: #25373D;
+}
+.nav_link{
+    display: flex;
+    align-items: center;
+}
+/* Login Button  */
+.Login{           
+    margin-right: 1rem;
+    
+    font-size: 1rem;
+    color: #FFFFF7;
+    border: none;
+    font-weight: bold;
+    
+    background-color: #3D8EB9;
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+.Login:hover{
+    background-color:  #FFFFF7;
+    color: #25373D;
+
+}
+.cart{
+    align-items: center;
+    display: flex;
+}
+.cart h2{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 0.2rem;
+}
+.nav_link a:hover{
+    color: #3D8EB9;
+
+}
+/* end of navbar */
+
+#background{
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+}
+.shopnow{
+    position: absolute;
+  top: 70%; /* adjust the top position */
+  left: 10%; /* adjust the left position */
+  border: none;
+  background-color: #D6523C;
+  padding: 0.8rem 3rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #FFFFF7;
+  
+}
+.shopnow:hover{
+    background-color:  #FFFFF7;
+    color: #D6523C;
+    transition: 0.2s;
+
+}
+/* <short information in the middle page> */
+.section2{
+    /* height: 200vh; */
+    margin: 0;
+    padding: 0;
+}
+.short-information{
+    width: 90%;
+    margin: auto;
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  
+}
+.short-information h1{
+    font-size: 1rem;
+    color: #3E4651;
+    
+
+}
+.short-information h2{
+    font-size: 1rem;
+    color: #87766C;
+    
+    
+}
+.Text-short-information{
+    display: flex;
+    align-items: center;
+}
+.line {
+    width: 1px;
+    height: 30px;
+    background-color: #333;
+    
+  }
+#inf-icon{
+    margin-right: 0.3rem;
+    color: #87766C;
+}
+/* < End short information in the middle page> */
+/* Left side show item */
+.left-items-header{
+    margin-left: 5%;
+    margin-top: 2%;
+    width: 70%;
+    
+    background-color: #E7E7E7;
+}
+.left-item-header-line{
+    width: 10px;
+    background-color: #F29B34;
+}
+
+.left-item-header-line h1{
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding-left: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 40px;
+    
+}
+.left-side-item{
+    margin-left: 5%;
+    width: 70%;
+    border: 1px solid #E6DCDB;
+}
+
+.left-side-item img{
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid #E6DCDB;
+}
+
+.catalouge-list {
+    flex: 30%;
+    margin:0;
+    padding: 20px;
+   }
+
+   .best-seller {
+    width: 25.5%;
+   }
+
+
+.item-list{
+    padding: 20px 220px 30px 10px;
+    border: 1 solid #000;
+    display: flex;
+    flex-direction: column;
+}
+.item-list img{
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid #E6DCDB;
+}
+.item{
+    margin-top: 10px;
+    display: flex;
+    /* justify-content: space-between; */
+}
+.border-item{
+    border: #25373D;
+}
+.item-detail{
+    /* flex:1; */
+    padding-left: 12px;
+    /* padding-right:200px; */
+    /* flex-shrink: 0; */
+}
+.item-detail p{
+    color: #888888;
+    font-size: 14px;
+}
+.item-detail h2{
+    color: #282830;
+    margin-top: 5px;
+    font-size: 18px;
+}
+/* end Left side show item */
+
+.Product-slider{
+    float: right;
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    margin: 5px 5% 0 40%;
+    /* border: 1px solid #25373D; */
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* justify-content: space-between; */
+
+}
+.Product-slider-header{
+    color: #313131;
+    text-align: center;
+    width: 100%;
+    float: right;
+    margin: 30px 5% 0 40%;
+    
+}
+/* start of item image hover to change */
+.product-box{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 250px;
+    padding: 7px;
+    border: 1px solid #25373D;
+    border-radius: 10px;
+    margin: 20px 20px;
+}
+.p-img-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+     
+}
+.p-img a,
+.p-img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+.p-img a img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+    animation: fade 0.6s;
+}
+.p-img-back{
+    display: none;
+}
+.p-img-container:hover .p-img-back{
+    display: block;
+}
+.p-img-container:hover .p-img-front{
+    display: none;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* END of item image hover to change */
+.p-box-detail{
+    font-size: 14px;
+}
+.price-p-box{
+    font-size: 18px;
+    margin-top: 3px;
+}
+.product-box-main{
+    display: flex;
+}
+/* END OF Product display box */
+
+
+.loader-container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: #000
+        url("https://media.giphy.com/media/8agqybiK5LW8qrG3vJ/giphy.gif") center
+        no-repeat;
+    z-index: 1;
+
+}
+
+.splitter{
+    padding: 10px;
+    display: flex;
+    /* flex-direction: row;
+    justify-content: space-between; */
+    
+}
+
+
+
+.product-laptop{
+    /* flex: auto; */
+    /* width: 1rem; */
+}

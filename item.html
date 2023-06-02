@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    
+    <title>PC SHOP</title>
+</head> 
+
+<body>
+    <!-- <div class="loader-container">
+        <div class="spinner"></div>
+    </div> -->
+    <div class="section1">
+        <nav>
+        
+            <div class="logo">
+                <a href="index.html	">
+                    <i class="fa-sharp fa-solid fa-computer fa-2xl"></i>
+                    <h1>PC SHOP</h1>
+                </a>
+            </div>
+            <div class="nav_link">
+                
+                <ul>
+                    <li><a href="#">LAPTOP</a></li>
+                    <li><a href="#">DESKTOP</a></li>
+                    <li><a href="#">PC COMPONENTS</a></li>
+                    <li><a href="About-Us.html">About Us</a></li>
+                </ul>
+                
+                    <button class="Login">Login</button>
+                    <a class="cart" href="#"><h2>Cart</h2><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+            </div>
+            
+        </nav>
+        <div class = "card-wrapper">
+            <div class = "card">
+              <!-- card left -->
+              <div class = "product-imgs">
+                <div class = "img-display">
+                  <div class = "img-showcase">
+                    <img src = "img/item/Laptop/Katana-17-B13VFK-2-.jpg" class="img1">
+                    <img src = "img/item/Laptop/Katana-15-B13VEK-1-500x500 back.jpg" class="img2">
+                  </div>
+                </div>
+                <div class = "img-select">
+                  <div class = "img-item">
+                    <a href = "#" data-id = "1">
+                      <img class="img1" src = "img/item/Laptop/Katana-17-B13VFK-2-.jpg"  >
+                    </a>
+                  </div>
+                  <div class = "img-item">
+                    <a href = "#" data-id = "2">
+                      <img class="img2" src = "img/item/Laptop/Katana-15-B13VEK-1-500x500 back.jpg" >
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- card right -->
+              <!-- <div class = "product-content">
+                <h2 class = "product-title">nike shoes</h2>
+                <a href = "#" class = "product-link">visit nike store</a>
+                <div class = "product-rating">
+                  <i class = "fas fa-star"></i>
+                  <i class = "fas fa-star"></i>
+                  <i class = "fas fa-star"></i>
+                  <i class = "fas fa-star"></i>
+                  <i class = "fas fa-star-half-alt"></i>
+                  <span>4.7(21)</span>
+                </div>
+      
+                <div class = "product-price">
+                  <p class = "last-price">Old Price: <span>$257.00</span></p>
+                  <p class = "new-price">New Price: <span>$249.00 (5%)</span></p> -->
+            </div>
+            <div class="right-detail">
+                <div class = "product-detail">
+                  <h2>about this item: </h2>
+                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p> -->
+                  <ul>
+                    <li>Cpu: <span id="cpu"> I7 13650HX</span></li>
+                    <li>Ram: <span id="ram">16GB</span></li>
+                    <li>Storage: <span id="ssd">SSD 512GB PCIE</span></li>
+                    <li>Vga: <span id="gpu">RTX4060 8GB</span></li>
+                    <li>Display: <span id="display">15.6"FHD+,165HZ</span></li>
+                  </ul>
+                  <h2>Price : <span id="cost">200</span>$</h2>
+                </div>
+      
+                <div class = "purchase-info">
+                  <input type = "number" min = "0" value = "1">
+                  <button type = "button" class = "btn">
+                    Add to Cart <i class = "fas fa-shopping-cart"></i>
+                  </button>
+                  <button type = "button" class = "btn">Compare</button>
+                </div>
+      
+                <div class = "social-links">
+                  <p>Share At: </p>
+                  <a href = "#">
+                    <i class = "fab fa-facebook-f"></i>
+                  </a>
+                  <a href = "#">
+                    <i class = "fab fa-twitter"></i>
+                  </a>
+                  <a href = "#">
+                    <i class = "fab fa-instagram"></i>
+                  </a>
+                  <a href = "#">
+                    <i class = "fab fa-whatsapp"></i>
+                  </a>
+                  <a href = "#">
+                    <i class = "fab fa-pinterest"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+<style>
+    *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{ 
+    line-height: 1.5;
+}
+.card-wrapper{
+    padding-top: 10x;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.img-display{
+    overflow: hidden;
+}
+.img-showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.img-showcase img{
+    min-width: 100%;
+}
+.img-select{
+    display: flex;
+}
+.img-item{
+    margin: 0.3rem;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+.img-item:hover{
+    opacity: 0.8;
+}
+.product-content{
+    padding: 2rem 1rem;
+}
+.product-title{
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #12263a;
+    margin: 1rem 0;
+}
+.product-title::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 80px;
+    background: #12263a;
+}
+.product-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    background: #256eff;
+    color: #fff;
+    padding: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+.product-link:hover{
+    opacity: 0.9;
+}
+.product-rating{
+    color: #ffc107;
+}
+.product-rating span{
+    font-weight: 600;
+    color: #252525;
+}
+.product-price{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.product-price span{
+    font-weight: 400;
+}
+.last-price span{
+    color: #f64749;
+    text-decoration: line-through;
+}
+.new-price span{
+    color: #256eff;
+}
+.product-detail h2{
+    text-transform: capitalize;
+    color: #12263a;
+    padding-bottom: 0.6rem;
+}
+.product-detail p{
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+.product-detail ul{
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+.product-detail ul li{
+    margin: 0;
+    list-style: none;
+    background: url(shoes_images/checked.png) left center no-repeat;
+    background-size: 18px;
+    padding-left: 1.7rem;
+    margin: 0.4rem 0;
+    font-weight: 600;
+    opacity: 0.9;
+}
+.product-detail ul li span{
+    font-weight: 400;
+}
+.purchase-info{
+    margin: 1.5rem 0;
+}
+.purchase-info input,
+.purchase-info .btn{
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+}
+.purchase-info input{
+    width: 60px;
+}
+.purchase-info .btn{
+    cursor: pointer;
+    color: #fff;
+}
+.purchase-info .btn:first-of-type{
+    background: #256eff;
+}
+.purchase-info .btn:last-of-type{
+    background: #f64749;
+}
+.purchase-info .btn:hover{
+    opacity: 0.9;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+}
+.social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #000;
+    border: 1px solid #000;
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    background: #000;
+    border-color: transparent;
+    color: #fff;
+}
+
+@media screen and (min-width: 992px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+        width:50%;
+    }
+    .card-wrapper{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+}
+</style>
+
+<script>
+    
+const imgs = document.querySelectorAll('.img-select a');
+const imgBtns = [...imgs];
+let imgId = 1;
+
+imgBtns.forEach((imgItem) => {
+    imgItem.addEventListener('click', (event) => {
+        event.preventDefault();
+        imgId = imgItem.dataset.id;
+        slideImage();
+    });
+});
+
+function slideImage(){
+    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+2
+    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+}
+
+window.addEventListener('resize', slideImage);
+
+// add more  here
+
+const data = [
+    {
+        cpu: "hot",
+        ram: "slow",
+        ssd:  "something",
+        gpu: "nvm",
+        display: "adquate",
+        img1: "img/item/Laptop/Katana-17-B13VFK-2-.jpg",
+        img2: "img/item/Laptop/Katana-15-B13VEK-1-500x500 back.jpg",
+        cost: 202
+    },
+    {
+        cpu: "I7 13650HX ",
+        ram: "16GB",
+        ssd:  "SSD 512GB PCIE ",
+        gpu: "RTX4060 8GB ",
+        display: "15.6 FHD+,165HZ",
+        img1: "img/item/Laptop/ROG-G614-500x500.jpg",
+        img2: "img/item/Laptop/ROG-G614-Black-back.jpg",
+        cost: 1599.00
+    },
+]   
+
+function col(dat, dat2, classI) {
+    const imgCollection = document.getElementsByClassName(classI);
+    // for (let i = 0; i < imgCollection.length; i++) {
+        console.log("i", imgCollection, imgCollection[0].src = dat)
+        console.log("i", imgCollection, imgCollection[1].src = dat2)
+
+    // }
+}
+
+// add more  here
+
+if (localStorage.getItem("ide") =="pc1" ) {
+    document.getElementById("cpu").innerHTML = data[0].cpu
+    document.getElementById("ram").innerHTML = data[0].ram
+    document.getElementById("ssd").innerHTML = data[0].ssd
+    document.getElementById("gpu").innerHTML = data[0].gpu
+    document.getElementById("display").innerHTML = data[0].display
+    document.getElementById("cost").innerHTML = data[0].cost
+    document.getElementsByClassName("img1").src = col(data[0].img1,data[0].img1,"img1")
+    document.getElementsByClassName("img2").src = col(data[0].img2,data[0].img2,"img2")
+
+} 
+else if (localStorage.getItem("ide") =="pc2" ) {
+    document.getElementById("cpu").innerHTML = data[1].cpu
+    document.getElementById("ram").innerHTML = data[1].ram
+    document.getElementById("ssd").innerHTML = data[1].ssd
+    document.getElementById("gpu").innerHTML = data[1].gpu
+    document.getElementById("display").innerHTML = data[1].display
+    document.getElementById("cost").innerHTML = data[1].cost
+    document.getElementsByClassName("img1").src = col(data[1].img1,data[1].img1,"img1")
+    document.getElementsByClassName("img2").src = col(data[1].img2,data[1].img2,"img2")
+}
+
+
+
+
+
+</script> 
+
+</html>

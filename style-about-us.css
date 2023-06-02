@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+}
+
+
+nav{
+    
+    background-color: white;
+    width: 80%;
+    padding-top: 1rem;
+    margin: auto;
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: space-between;
+    border-radius: 3rem;
+    padding: 0.5rem 3rem;
+    align-items: center;
+    position: absolute;
+    left: 10%;
+    font-family: 'Roboto', sans-serif;
+}
+.logo {
+    text-align: center;
+    align-content: space-between;
+    margin-top: 0.4%;
+    
+}
+.logo a{
+    text-decoration: none;
+    color: #25373D;
+}
+.logo a:hover{
+    color: #3D8EB9;
+
+}
+.logo h1{
+    font-size: 1.5rem;
+    margin-top: 1%;
+    
+    
+}
+.nav_link li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 3rem;
+    font-weight: bold;
+    font-size: 1rem;
+    
+    
+}
+.nav_link a{
+    text-decoration: none;
+    color: #25373D;
+}
+.nav_link{
+    display: flex;
+    align-items: center;
+}
+/* Login Button  */
+.Login{           
+    margin-right: 1rem;
+    
+    font-size: 1rem;
+    color: #FFFFF7;
+    border: none;
+    font-weight: bold;
+    
+    background-color: #3D8EB9;
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+.Login:hover{
+    background-color:  #FFFFF7;
+    color: #25373D;
+
+}
+.cart{
+    align-items: center;
+    display: flex;
+}
+.cart h2{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 0.2rem;
+}
+.nav_link a:hover{
+    color: #3D8EB9;
+
+}
+
+
+.about-section {
+    padding: 100px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+.card img{
+  width: 12rem;
+  height: 13rem;
+
+}
+.column {
+    
+    width: 40%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    display: flex;
+}
+  
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    display: flex;
+    align-items:start;
+}
+
+  
+  
+ 
+  
+  .container {
+    padding: 0 12px;
+    width: 20rem;
+  }
+  .container h2{
+    margin-bottom: 2px;
+  }
+  .container p{
+    margin-bottom: 5px;
+  }
+  
+  /* .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  } */
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    /* display: inline-block; */
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    
+    
+    
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  .information-card{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  
+  
