@@ -1,172 +1,187 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 }
 
-
-nav{
-    
-    background-color: white;
-    width: 80%;
-    padding-top: 1rem;
-    margin: auto;
-    display: flex;
-    margin-top: 0.5rem;
-    justify-content: space-between;
-    border-radius: 3rem;
-    padding: 0.5rem 3rem;
-    align-items: center;
-    position: absolute;
-    left: 10%;
-    font-family: 'Roboto', sans-serif;
+nav {
+  background-color: white;
+  width: 80%;
+  padding-top: 1rem;
+  margin: auto;
+  display: flex;
+  margin-top: 0.5rem;
+  justify-content: space-between;
+  border-radius: 3rem;
+  padding: 0.5rem 3rem;
+  align-items: center;
+  position: absolute;
+  left: 10%;
+  font-family: "Roboto", sans-serif;
 }
 .logo {
-    text-align: center;
-    align-content: space-between;
-    margin-top: 0.4%;
-    
+  text-align: center;
+  align-content: space-between;
+  margin-top: 0.4%;
 }
-.logo a{
-    text-decoration: none;
-    color: #25373D;
+.logo a {
+  text-decoration: none;
+  color: #25373d;
 }
-.logo a:hover{
-    color: #3D8EB9;
-
+.logo a:hover {
+  color: #3d8eb9;
 }
-.logo h1{
-    font-size: 1.5rem;
-    margin-top: 1%;
-    
-    
+.logo h1 {
+  font-size: 1.5rem;
+  margin-top: 1%;
 }
 .nav_link li {
-    list-style: none;
-    display: inline-block;
-    padding-right: 3rem;
-    font-weight: bold;
-    font-size: 1rem;
-    
-    
+  list-style: none;
+  display: inline-block;
+  padding-right: 3rem;
+  font-weight: bold;
+  font-size: 1rem;
 }
-.nav_link a{
-    text-decoration: none;
-    color: #25373D;
+.nav_link a {
+  text-decoration: none;
+  color: #25373d;
 }
-.nav_link{
-    display: flex;
-    align-items: center;
+.nav_link {
+  display: flex;
+  align-items: center;
+}
+.dropdown-nav-item {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+  color: white; /* Set the text color to white */
+  padding: 10px; /* Add padding around the content */
+}
+.dropdown-nav-item li {
+  display: block;
+  padding: 5px 0; /* Add vertical padding between list items */
+}
+.dropdown-nav-item a{
+  color: #fffff7;
+  padding: 5px 10px; /* Add padding around the links */
+}
+.dropdown-nav:hover .dropdown-nav-item   {
+  display: block;
 }
 /* Login Button  */
-.Login{           
-    margin-right: 1rem;
-    
-    font-size: 1rem;
-    color: #FFFFF7;
-    border: none;
-    font-weight: bold;
-    
-    background-color: #3D8EB9;
-    padding: 0.6rem 0.8rem;
-    border-radius: 0.3rem;
-    cursor: pointer;
-}
-.Login:hover{
-    background-color:  #FFFFF7;
-    color: #25373D;
+.Login {
+  margin-right: 1rem;
 
-}
-.cart{
-    align-items: center;
-    display: flex;
-}
-.cart h2{
-    font-size: 1rem;
-    font-weight: bold;
-    margin-right: 0.2rem;
-}
-.nav_link a:hover{
-    color: #3D8EB9;
+  font-size: 1rem;
+  color: #fffff7;
+  border: none;
+  font-weight: bold;
 
+  background-color: #3d8eb9;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
 }
-
+.Login:hover {
+  background-color: #fffff7;
+  color: #25373d;
+}
+.cart {
+  align-items: center;
+  display: flex;
+}
+.cart h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 0.2rem;
+}
+.nav_link a:hover {
+  color: #3d8eb9;
+}
 
 .about-section {
-    padding: 100px;
-    text-align: center;
-    background-color: #474e5d;
-    color: white;
-  }
-.card img{
-  width: 12rem;
-  height: 13rem;
-
+  padding: 100px;
+  text-align: center;
+  background-color: #bdc3c7;
+  color: white;
+  height: 250px;
 }
-.column {
-    
-    width: 40%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-    display: flex;
+.about-section h2,
+h3 {
+  margin-top: 10px;
 }
-  
+.section2-member {
+  background-color: #ecf0f1;
+  padding: 0 1rem 5rem 1rem;
+}
+.section2-tittle {
+  text-align: center;
+  padding-top: 1rem;
+}
+.member {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
-    display: flex;
-    align-items:start;
+  width: 370px;
+  height: 400px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+  border: 0.2px solid #ecf0f1;
+  border-radius: 20px;
 }
-
-  
-  
- 
-  
-  .container {
-    padding: 0 12px;
-    width: 20rem;
-  }
-  .container h2{
-    margin-bottom: 2px;
-  }
-  .container p{
-    margin-bottom: 5px;
-  }
-  
-  /* .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  } */
-  
-  .title {
-    color: grey;
-  }
-  
-  .button {
-    border: none;
-    outline: 0;
-    /* display: inline-block; */
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    
-    
-    
-  }
-  
-  .button:hover {
-    background-color: #555;
-  }
-  .information-card{
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-  }
-  
-  
+.card-detail {
+  text-align: center;
+}
+.card-detail img {
+  width: 150px;
+  height: 150px;
+  margin-top: 2rem;
+  border-radius: 50%;
+}
+.card-detail h1 {
+  font-size: 25px;
+  text-align: center;
+}
+.card-detail h2 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #c2c4bb;
+  text-align: center;
+}
+.member-skill {
+  margin-top: 18px;
+}
+.member-skill ol {
+  display: inline;
+  margin-right: 10px;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid #c2c4bb;
+  border-radius: 15px;
+}
+.card-detail p {
+  margin-top: 2rem;
+  text-align: left;
+}
+.contact-icon img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+.contact-icon img:hover {
+  transform: scale(1.2);
+}
+.contact-icon {
+  text-align: end;
+  margin-top: 0.5rem;
+}
